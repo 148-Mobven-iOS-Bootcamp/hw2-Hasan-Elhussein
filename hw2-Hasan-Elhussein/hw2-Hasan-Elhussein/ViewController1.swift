@@ -8,11 +8,18 @@
 import UIKit
 
 class ViewController1: UIViewController {
-
+   
+    @IBOutlet weak var closureLbl: UILabel!
+    @IBOutlet weak var DelegateLbl: UILabel!
+    @IBOutlet weak var NotificationCenterLbl: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func nextBtnTapped(_ sender: Any) {
     }
     
 }
