@@ -23,6 +23,21 @@
             </objects>
             <point key="canvasLocation" x="-23" y="78"/>
         </scene>
+        <!--View Controller2-->
+        <scene sceneID="LhG-rr-6CZ">
+            <objects>
+                <viewController id="f43-js-KvZ" customClass="ViewController2" customModule="hw2_Hasan_Elhussein" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="suj-Qu-CAV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="hE8-Z6-bXm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mld-T9-Z78" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="723" y="78"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
