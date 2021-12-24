@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		9F4F5F6827764CD7007C3AD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4F5F6727764CD7007C3AD9 /* AppDelegate.swift */; };
 		9F4F5F6A27764CD7007C3AD9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4F5F6927764CD7007C3AD9 /* SceneDelegate.swift */; };
-		9F4F5F6C27764CD7007C3AD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4F5F6B27764CD7007C3AD9 /* ViewController.swift */; };
 		9F4F5F6F27764CD7007C3AD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F4F5F6D27764CD7007C3AD9 /* Main.storyboard */; };
 		9F4F5F7127764CDA007C3AD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F4F5F7027764CDA007C3AD9 /* Assets.xcassets */; };
 		9F4F5F7427764CDA007C3AD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F4F5F7227764CDA007C3AD9 /* LaunchScreen.storyboard */; };
+		9F4F5F7E27764F4E007C3AD9 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4F5F7D27764F4E007C3AD9 /* ViewController1.swift */; };
+		9F4F5F82277650BB007C3AD9 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4F5F81277650BB007C3AD9 /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9F4F5F6427764CD7007C3AD9 /* hw2-Hasan-Elhussein.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hw2-Hasan-Elhussein.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F4F5F6727764CD7007C3AD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F4F5F6927764CD7007C3AD9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9F4F5F6B27764CD7007C3AD9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9F4F5F6E27764CD7007C3AD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F4F5F7027764CDA007C3AD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F4F5F7327764CDA007C3AD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F4F5F7527764CDA007C3AD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F4F5F7D27764F4E007C3AD9 /* ViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
+		9F4F5F81277650BB007C3AD9 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				9F4F5F6727764CD7007C3AD9 /* AppDelegate.swift */,
 				9F4F5F6927764CD7007C3AD9 /* SceneDelegate.swift */,
-				9F4F5F6B27764CD7007C3AD9 /* ViewController.swift */,
+				9F4F5F7D27764F4E007C3AD9 /* ViewController1.swift */,
+				9F4F5F81277650BB007C3AD9 /* ViewController2.swift */,
 				9F4F5F6D27764CD7007C3AD9 /* Main.storyboard */,
 				9F4F5F7027764CDA007C3AD9 /* Assets.xcassets */,
 				9F4F5F7227764CDA007C3AD9 /* LaunchScreen.storyboard */,
@@ -138,7 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F4F5F6C27764CD7007C3AD9 /* ViewController.swift in Sources */,
+				9F4F5F7E27764F4E007C3AD9 /* ViewController1.swift in Sources */,
+				9F4F5F82277650BB007C3AD9 /* ViewController2.swift in Sources */,
 				9F4F5F6827764CD7007C3AD9 /* AppDelegate.swift in Sources */,
 				9F4F5F6A27764CD7007C3AD9 /* SceneDelegate.swift in Sources */,
 			);
