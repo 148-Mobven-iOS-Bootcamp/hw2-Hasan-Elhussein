@@ -28,7 +28,7 @@
                                     <constraint firstAttribute="width" constant="97" id="7LX-IB-wGD"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vLK-sg-Ici">
                                 <rect key="frame" x="158.5" y="209" width="97" height="34"/>
@@ -36,7 +36,7 @@
                                     <constraint firstAttribute="width" constant="97" id="WUg-lG-bk0"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter 2 numbers (Integers) and then choose an operation to use:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iwN-c8-afM">
                                 <rect key="frame" x="20" y="123" width="374" height="41"/>
@@ -45,7 +45,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ZE-eP-uwS">
-                                <rect key="frame" x="355" y="209.5" width="19" height="33.5"/>
+                                <rect key="frame" x="324" y="210.5" width="70" height="33.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -66,6 +66,9 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="Add + "/>
+                                        <connections>
+                                            <action selector="addBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qLT-nq-MZP"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ib7-DF-6ru">
                                         <rect key="frame" x="96.5" y="0.0" width="85" height="35"/>
@@ -74,6 +77,9 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="Sub -"/>
+                                        <connections>
+                                            <action selector="subBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S29-ak-Gpj"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GLh-EQ-ehG">
                                         <rect key="frame" x="192.5" y="0.0" width="85.5" height="35"/>
@@ -82,6 +88,9 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="Mul *"/>
+                                        <connections>
+                                            <action selector="mulBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H8t-5E-3ZP"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dX4-Uh-ela">
                                         <rect key="frame" x="289" y="0.0" width="85" height="35"/>
@@ -90,6 +99,9 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="Div /"/>
+                                        <connections>
+                                            <action selector="divBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wwr-w0-TWG"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -105,7 +117,7 @@
                             <constraint firstItem="pYc-Gm-zbv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5DA-1S-H6b"/>
                             <constraint firstItem="vLK-sg-Ici" firstAttribute="top" secondItem="iwN-c8-afM" secondAttribute="bottom" constant="45" id="5vq-1F-IvB"/>
                             <constraint firstItem="pYc-Gm-zbv" firstAttribute="top" secondItem="Pjh-vQ-oOm" secondAttribute="bottom" constant="75" id="AwF-kd-8bt"/>
-                            <constraint firstItem="0ZE-eP-uwS" firstAttribute="leading" secondItem="vLK-sg-Ici" secondAttribute="trailing" constant="99.5" id="C8F-Ni-4dx"/>
+                            <constraint firstItem="0ZE-eP-uwS" firstAttribute="leading" secondItem="vLK-sg-Ici" secondAttribute="trailing" constant="68.5" id="C8F-Ni-4dx"/>
                             <constraint firstItem="8E4-3w-kvS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kp7-t4-KyA"/>
                             <constraint firstItem="k0h-mh-axq" firstAttribute="centerY" secondItem="vLK-sg-Ici" secondAttribute="centerY" id="NgF-fa-2fB"/>
                             <constraint firstItem="iwN-c8-afM" firstAttribute="top" secondItem="8E4-3w-kvS" secondAttribute="bottom" constant="50" id="RsE-IG-aOk"/>
@@ -121,11 +133,16 @@
                             <constraint firstItem="Pjh-vQ-oOm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kO3-xW-pV6"/>
                             <constraint firstItem="j8v-eM-or0" firstAttribute="centerY" secondItem="vLK-sg-Ici" secondAttribute="centerY" id="kmQ-BR-996"/>
                             <constraint firstItem="k0h-mh-axq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="x5D-5L-tNb"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0ZE-eP-uwS" secondAttribute="trailing" constant="40" id="xPr-KM-nq7"/>
-                            <constraint firstItem="0ZE-eP-uwS" firstAttribute="centerY" secondItem="vLK-sg-Ici" secondAttribute="centerY" id="yyB-sy-L5b"/>
-                            <constraint firstItem="0ZE-eP-uwS" firstAttribute="leading" secondItem="j8v-eM-or0" secondAttribute="trailing" constant="53" id="z0o-9s-FeL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0ZE-eP-uwS" secondAttribute="trailing" constant="20" id="xPr-KM-nq7"/>
+                            <constraint firstItem="0ZE-eP-uwS" firstAttribute="centerY" secondItem="vLK-sg-Ici" secondAttribute="centerY" constant="1" id="yyB-sy-L5b"/>
+                            <constraint firstItem="0ZE-eP-uwS" firstAttribute="leading" secondItem="j8v-eM-or0" secondAttribute="trailing" constant="22" id="z0o-9s-FeL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="num1Txt" destination="k0h-mh-axq" id="tR1-bo-eel"/>
+                        <outlet property="num2Txt" destination="vLK-sg-Ici" id="naK-8w-G5w"/>
+                        <outlet property="resultTxt" destination="0ZE-eP-uwS" id="add-Ci-KJU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
