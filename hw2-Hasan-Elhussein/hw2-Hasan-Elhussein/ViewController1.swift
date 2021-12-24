@@ -57,6 +57,7 @@ func multiply(_ num1: Int, _ num2: Int) -> Int{
 }
 
 func divide(_ num1: Int, _ num2: Int) -> Int{
+    if num2 == 0 { return 0 }
     return num1 / num2
 }
 
