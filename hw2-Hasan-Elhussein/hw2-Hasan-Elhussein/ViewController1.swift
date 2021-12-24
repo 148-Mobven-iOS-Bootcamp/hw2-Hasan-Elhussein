@@ -17,3 +17,24 @@ class ViewController1: UIViewController {
     
 }
 
+// Math operations (+ - * /)
+func sum(_ num1: Int, _ num2: Int) -> Int{
+    return num1 + num2
+}
+
+func multiply(_ num1: Int, _ num2: Int) -> Int{
+    return num1 * num2
+}
+
+func subtract(_ num1: Int, _ num2: Int) -> Int{
+    return num1 - num2
+}
+
+func divide(_ num1: Int, _ num2: Int) -> Int{
+    return num1 / num2
+}
+
+// This function uses a closure for the calculation operation
+func calculate(_ num1: Int, operand: (Int, Int) -> Int, _ num2: Int) -> Int{
+    return operand(num1, num2)
+}
