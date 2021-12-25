@@ -22,7 +22,7 @@ class ViewController1: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(didGetNotification(_:)), name: Notification.Name("data"), object: nil)
         
     }
-    
+    // Function to run with NotificationCenter observer.
     @objc func didGetNotification(_ Notification: Notification){
         let text = Notification.object as! String?
         NotificationCenterLbl.text = text
@@ -34,6 +34,9 @@ class ViewController1: UIViewController {
         let vc = storyboard?.instantiateViewController(withIdentifier: "ViewController2") as! ViewController2
         vc.modalPresentationStyle = .fullScreen
         
+        // Connect delegate of ViewController2 to self
+        vc.delegate = self
+        
         // Closure method.
         vc.closureMethod = {text in
             self.closureLbl.text = text
@@ -42,5 +45,15 @@ class ViewController1: UIViewController {
         // Present ViewController2.
         present(vc, animated: true)
     }
+    
+}
+
+
+// Extension to confirm to DataDelegate protocol.
+extension ViewController1: DataDelegate{
+    func userDidEnterText(text: String) {
+        DelegateLbl.text = text
+    }
+    
     
 }
