@@ -28,7 +28,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fdq-CL-eZR">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fdq-CL-eZR">
                                 <rect key="frame" x="20" y="188.5" width="374" height="33.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                 <nil key="textColor"/>
@@ -40,7 +40,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2s-N5-DLy">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2s-N5-DLy">
                                 <rect key="frame" x="20" y="337.5" width="374" height="33.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                 <nil key="textColor"/>
@@ -52,7 +52,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKQ-da-s13">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKQ-da-s13">
                                 <rect key="frame" x="20" y="486.5" width="374" height="33.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                 <nil key="textColor"/>
@@ -63,7 +63,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Go to next page"/>
                                 <connections>
-                                    <segue destination="f43-js-KvZ" kind="presentation" modalPresentationStyle="fullScreen" id="cJz-Wo-cHs"/>
+                                    <action selector="nextBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8fc-LK-erw"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -77,9 +77,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="a5d-iD-uH2" secondAttribute="bottom" constant="135" id="9eq-xj-OIi"/>
                             <constraint firstItem="Fdq-CL-eZR" firstAttribute="top" secondItem="iwN-c8-afM" secondAttribute="bottom" constant="45" id="BL1-9j-RlA"/>
                             <constraint firstItem="lKQ-da-s13" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BSv-4w-GrU"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f2s-N5-DLy" secondAttribute="trailing" constant="20" id="I6c-t9-g3u"/>
                             <constraint firstItem="8E4-3w-kvS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kp7-t4-KyA"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lKQ-da-s13" secondAttribute="trailing" constant="20" id="Rgc-lf-iKS"/>
                             <constraint firstItem="iwN-c8-afM" firstAttribute="top" secondItem="8E4-3w-kvS" secondAttribute="bottom" constant="50" id="RsE-IG-aOk"/>
                             <constraint firstItem="lKQ-da-s13" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="TSK-Ex-4KD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ecq-84-MUT" secondAttribute="trailing" constant="20" id="V8w-1w-A6E"/>
@@ -94,9 +92,13 @@
                             <constraint firstItem="Ecq-84-MUT" firstAttribute="top" secondItem="Fdq-CL-eZR" secondAttribute="bottom" constant="50" id="hT3-BK-dLe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KUX-Lx-5xE" secondAttribute="trailing" constant="20" id="hqX-CY-NFA"/>
                             <constraint firstItem="KUX-Lx-5xE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="wtJ-pw-FOe"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fdq-CL-eZR" secondAttribute="trailing" constant="20" id="yPe-z1-mac"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="DelegateLbl" destination="f2s-N5-DLy" id="20k-o7-qxe"/>
+                        <outlet property="NotificationCenterLbl" destination="lKQ-da-s13" id="M7t-9w-q0u"/>
+                        <outlet property="closureLbl" destination="Fdq-CL-eZR" id="rW4-6s-MfX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -153,6 +155,9 @@
                                 <rect key="frame" x="20" y="44" width="56" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Back"/>
+                                <connections>
+                                    <action selector="backBtnTapped:" destination="f43-js-KvZ" eventType="touchUpInside" id="4vz-xq-lhZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hE8-Z6-bXm"/>
@@ -186,6 +191,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0nx-rl-EiA"/>
+                    <connections>
+                        <outlet property="DelegateTxt" destination="riU-M3-VZk" id="9fU-07-G5K"/>
+                        <outlet property="NotificationCenterTxt" destination="8BF-Uh-koI" id="Phn-Tz-2bV"/>
+                        <outlet property="closureTxt" destination="peH-Aq-Mby" id="qXZ-Mc-PnT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mld-T9-Z78" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
