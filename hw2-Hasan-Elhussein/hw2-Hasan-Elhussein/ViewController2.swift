@@ -26,6 +26,9 @@ class ViewController2: UIViewController {
         // Closure method:
         closureMethod?(closureTxt.text)
         
+        // Post the text for NotificationCenter method.
+        NotificationCenter.default.post(name: Notification.Name("data"), object: NotificationCenterTxt.text)
+        
         // Dismiss ViewController2.
         dismiss(animated: true, completion: nil)
     }

@@ -18,6 +18,14 @@ class ViewController1: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        // Add a NotificationCenter observer for NotificationCenter method.
+        NotificationCenter.default.addObserver(self, selector: #selector(didGetNotification(_:)), name: Notification.Name("data"), object: nil)
+        
+    }
+    
+    @objc func didGetNotification(_ Notification: Notification){
+        let text = Notification.object as! String?
+        NotificationCenterLbl.text = text
     }
     
     // IBActions
